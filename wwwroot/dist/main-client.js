@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2b0e81d83c6fa977b149"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0493ca80e39a3adb0308"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -2002,7 +2002,7 @@
 	var core_1 = __webpack_require__(19);
 	var angular2_universal_1 = __webpack_require__(20);
 	var app_module_1 = __webpack_require__(21);
-	__webpack_require__(41);
+	__webpack_require__(45);
 	// Enable either Hot Module Reloading or production mode
 	if (module['hot']) {
 	    module['hot'].accept();
@@ -2059,6 +2059,7 @@
 	var app_component_1 = __webpack_require__(23);
 	var navmenu_component_1 = __webpack_require__(33);
 	var home_component_1 = __webpack_require__(39);
+	var gallery_component_1 = __webpack_require__(41);
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -2070,13 +2071,15 @@
 	        declarations: [
 	            app_component_1.AppComponent,
 	            navmenu_component_1.NavMenuComponent,
-	            home_component_1.HomeComponent
+	            home_component_1.HomeComponent,
+	            gallery_component_1.GalleryComponent
 	        ],
 	        imports: [
 	            angular2_universal_1.UniversalModule,
 	            router_1.RouterModule.forRoot([
 	                { path: '', redirectTo: 'home', pathMatch: 'full' },
 	                { path: 'home', component: home_component_1.HomeComponent },
+	                { path: 'gallery', component: gallery_component_1.GalleryComponent },
 	                { path: '**', redirectTo: 'home' }
 	            ])
 	        ]
@@ -2232,7 +2235,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body, html {\r\n    height: 100% !important;\r\n}\r\n\r\nbody, h1, h2, h3, h4, h5 {\r\n    font-family: \"Raleway\", sans-serif;\r\n    font-weight: 400;\r\n    margin: 10px 0;\r\n}\r\n\r\nh3, h4{\r\n    margin: 20px 0 !important;\r\n}\r\n\r\n.bgimg {\r\n    background-image: url(" + __webpack_require__(30) + ");\r\n    min-height: 100%;\r\n    min-width: 100%;\r\n    background-position: center;\r\n    background-size: cover;\r\n}\r\n\r\n.container-fluid {\r\n    margin-top: 50px !important;\r\n    height: 100% !important;\r\n}\r\n\r\n#rightList {\r\n    float: right;\r\n}\r\n\r\n.sm-image {\r\n    width: 50px;\r\n    height: 50px;\r\n}\r\n\r\np {\r\n  margin: 10px 0 !important;\r\n}", ""]);
+	exports.push([module.id, "body, html {\r\n    height: 100% !important;\r\n}\r\n\r\nbody, h1, h2, h3, h4, h5 {\r\n    font-family: \"Raleway\", sans-serif;\r\n    font-weight: 400;\r\n    margin: 10px 0;\r\n}\r\n\r\nh3 {\r\n    margin: 20px 0 !important;\r\n}\r\n\r\n.bgimg {\r\n    background-image: url(" + __webpack_require__(30) + ");\r\n    min-height: 100%;\r\n    min-width: 100%;\r\n    background-position: center;\r\n    background-size: cover;\r\n}\r\n\r\n.container-fluid {\r\n    margin-top: 50px !important;\r\n    height: 100% !important;\r\n}\r\n\r\n#rightList {\r\n    float: right;\r\n}\r\n\r\n.sm-image {\r\n    width: 50px;\r\n    height: 50px;\r\n}\r\n\r\np {\r\n  margin: 10px 0 !important;\r\n}\r\n\r\n#galleryRow {\r\n    margin-top: 20px;\r\n}\r\n\r\n#galleryHr {\r\n    background-color: white;\r\n}", ""]);
 	
 	// exports
 
@@ -2303,7 +2306,7 @@
 /* 34 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class='main-nav'>\r\n        <nav class=\"navbar navbar-inverse navbar-default navbar-fixed-top\" role=\"navigation\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header page-scroll\">\r\n                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\">\r\n                    <span class=\"sr-only\">Toggle navigation</span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                </button>\r\n                <a class=\"navbar-brand\"[routerLink]=\"['/home']\">Home</a>\r\n            </div>\r\n            <div class=\"collapse navbar-collapse navbar-ex1-collapse\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li [routerLinkActive]=\"['link-active']\">\r\n                        <a [routerLink]=\"['/galery']\">Galeria</a>\r\n                    </li>\r\n                    <li [routerLinkActive]=\"['link-active']\">\r\n                        <a [routerLink]=\"['/buylist']\">Carrinho</a>\r\n                    </li>\r\n                    <li [routerLinkActive]=\"['link-active']\" >\r\n                        <a [routerLink]=\"['/about']\">Sobre</a>\r\n                    </li>\r\n                </ul>\r\n                <!--<ul class=\"nav navbar-nav\" id=\"rightList\" >\r\n                    \r\n                </ul>-->\r\n            </div>\r\n        </div>\r\n        </nav>\r\n</div>\r\n";
+	module.exports = "<div class='main-nav'>\r\n        <nav class=\"navbar navbar-inverse navbar-default navbar-fixed-top\" role=\"navigation\">\r\n        <div class=\"container\">\r\n            <div class=\"navbar-header page-scroll\">\r\n                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\">\r\n                    <span class=\"sr-only\">Toggle navigation</span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                    <span class=\"icon-bar\"></span>\r\n                </button>\r\n                <a class=\"navbar-brand\"[routerLink]=\"['/home']\">Home</a>\r\n            </div>\r\n            <div class=\"collapse navbar-collapse navbar-ex1-collapse\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li [routerLinkActive]=\"['link-active']\">\r\n                        <a [routerLink]=\"['/gallery']\">Galeria</a>\r\n                    </li>\r\n                    <li [routerLinkActive]=\"['link-active']\">\r\n                        <a [routerLink]=\"['/buylist']\">Carrinho</a>\r\n                    </li>\r\n                    <li [routerLinkActive]=\"['link-active']\" >\r\n                        <a [routerLink]=\"['/about']\">Sobre</a>\r\n                    </li>\r\n                </ul>\r\n                <!--<ul class=\"nav navbar-nav\" id=\"rightList\" >\r\n                    \r\n                </ul>-->\r\n            </div>\r\n        </div>\r\n        </nav>\r\n</div>\r\n";
 
 /***/ },
 /* 35 */
@@ -2397,6 +2400,68 @@
 
 /***/ },
 /* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var core_1 = __webpack_require__(19);
+	var GalleryComponent = (function () {
+	    function GalleryComponent() {
+	    }
+	    return GalleryComponent;
+	}());
+	GalleryComponent = __decorate([
+	    core_1.Component({
+	        selector: 'gallery',
+	        template: __webpack_require__(42),
+	        styles: [__webpack_require__(35), __webpack_require__(43), __webpack_require__(28)]
+	    })
+	], GalleryComponent);
+	exports.GalleryComponent = GalleryComponent;
+
+
+/***/ },
+/* 42 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"row\" id=\"galleryRow\">\r\n    <div class=\"col-md-3\">\r\n        <p class=\"lead\">Shop Name</p>\r\n        <div class=\"list-group\">\r\n            <a href=\"#\" class=\"list-group-item\">Category 1</a>\r\n            <a href=\"#\" class=\"list-group-item\">Category 2</a>\r\n            <a href=\"#\" class=\"list-group-item\">Category 3</a>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"col-md-9\">\r\n        <div class=\"row carousel-holder\">\r\n            <div class=\"col-md-12\">\r\n                <div id=\"carousel-example-generic\" class=\"carousel slide\" data-ride=\"carousel\">\r\n                    <ol class=\"carousel-indicators\">\r\n                        <li data-target=\"#carousel-example-generic\" data-slide-to=\"0\" class=\"active\"></li>\r\n                        <li data-target=\"#carousel-example-generic\" data-slide-to=\"1\"></li>\r\n                        <li data-target=\"#carousel-example-generic\" data-slide-to=\"2\"></li>\r\n                    </ol>\r\n                    <div class=\"carousel-inner\">\r\n                        <div class=\"item active\">\r\n                            <img class=\"slide-image\" src=\"http://placehold.it/800x300\" alt=\"\">\r\n                        </div>\r\n                        <div class=\"item\">\r\n                            <img class=\"slide-image\" src=\"http://placehold.it/800x300\" alt=\"\">\r\n                        </div>\r\n                        <div class=\"item\">\r\n                            <img class=\"slide-image\" src=\"http://placehold.it/800x300\" alt=\"\">\r\n                        </div>\r\n                    </div>\r\n                    <a class=\"left carousel-control\" href=\"#carousel-example-generic\" data-slide=\"prev\">\r\n                        <span class=\"glyphicon glyphicon-chevron-left\"></span>\r\n                    </a>\r\n                    <a class=\"right carousel-control\" href=\"#carousel-example-generic\" data-slide=\"next\">\r\n                        <span class=\"glyphicon glyphicon-chevron-right\"></span>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-sm-4 col-lg-4 col-md-4\">\r\n                <div class=\"thumbnail\">\r\n                    <img src=\"http://placehold.it/320x320\" alt=\"\">\r\n                    <div class=\"caption\">\r\n                        <h4 class=\"pull-right\">$24.99</h4>\r\n                        <h4><a href=\"#\">First Product</a>\r\n                        </h4>\r\n                        <p>See more snippets like this online store item at <a target=\"_blank\" href=\"http://www.bootsnipp.com\">Bootsnipp - http://bootsnipp.com</a>.</p>\r\n                    </div>\r\n                    <div class=\"ratings\">\r\n                        <p class=\"pull-right\">15 reviews</p>\r\n                        <p>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                        </p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-sm-4 col-lg-4 col-md-4\">\r\n                <div class=\"thumbnail\">\r\n                    <img src=\"http://placehold.it/320x320\" alt=\"\">\r\n                    <div class=\"caption\">\r\n                        <h4 class=\"pull-right\">$64.99</h4>\r\n                        <h4><a href=\"#\">Second Product</a>\r\n                        </h4>\r\n                        <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\r\n                    </div>\r\n                    <div class=\"ratings\">\r\n                        <p class=\"pull-right\">12 reviews</p>\r\n                        <p>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star-empty\"></span>\r\n                        </p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-sm-4 col-lg-4 col-md-4\">\r\n                <div class=\"thumbnail\">\r\n                    <img src=\"http://placehold.it/320x320\" alt=\"\">\r\n                    <div class=\"caption\">\r\n                        <h4 class=\"pull-right\">$74.99</h4>\r\n                        <h4><a href=\"#\">Third Product</a>\r\n                        </h4>\r\n                        <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\r\n                    </div>\r\n                    <div class=\"ratings\">\r\n                        <p class=\"pull-right\">31 reviews</p>\r\n                        <p>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star-empty\"></span>\r\n                        </p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-sm-4 col-lg-4 col-md-4\">\r\n                <div class=\"thumbnail\">\r\n                    <img src=\"http://placehold.it/320x320\" alt=\"\">\r\n                    <div class=\"caption\">\r\n                        <h4 class=\"pull-right\">$84.99</h4>\r\n                        <h4><a href=\"#\">Fourth Product</a>\r\n                        </h4>\r\n                        <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\r\n                    </div>\r\n                    <div class=\"ratings\">\r\n                        <p class=\"pull-right\">6 reviews</p>\r\n                        <p>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star-empty\"></span>\r\n                            <span class=\"glyphicon glyphicon-star-empty\"></span>\r\n                        </p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-sm-4 col-lg-4 col-md-4\">\r\n                <div class=\"thumbnail\">\r\n                    <img src=\"http://placehold.it/320x320\" alt=\"\">\r\n                    <div class=\"caption\">\r\n                        <h4 class=\"pull-right\">$94.99</h4>\r\n                        <h4><a href=\"#\">Fifth Product</a>\r\n                        </h4>\r\n                        <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\r\n                    </div>\r\n                    <div class=\"ratings\">\r\n                        <p class=\"pull-right\">18 reviews</p>\r\n                        <p>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star\"></span>\r\n                            <span class=\"glyphicon glyphicon-star-empty\"></span>\r\n                        </p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-sm-4 col-lg-4 col-md-4\">\r\n                <h4><a href=\"#\">Like this template?</a>\r\n                </h4>\r\n                <p>If you like this template, then check out <a target=\"_blank\" href=\"http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/\">this tutorial</a> on how to build a working review system for your online store!</p>\r\n                <a class=\"btn btn-primary\" target=\"_blank\" href=\"http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/\">View Tutorial</a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n    <!-- /.container -->\r\n\r\n<div class=\"container\">\r\n    <hr id=\"galleryHr\">\r\n    <!-- Footer -->\r\n    <footer>\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12\">\r\n                <p>Copyright &copy; Your Website 2014</p>\r\n            </div>\r\n        </div>\r\n    </footer>\r\n</div>";
+
+/***/ },
+/* 43 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	        var result = __webpack_require__(44);
+	
+	        if (typeof result === "string") {
+	            module.exports = result;
+	        } else {
+	            module.exports = result.toString();
+	        }
+	    
+
+/***/ },
+/* 44 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(27)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "/*!\n * Start Bootstrap - Shop Homepage (http://startbootstrap.com/)\n * Copyright 2013-2016 Start Bootstrap\n * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)\n */\n\nbody {\n    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */\n}\n\n.slide-image {\n    width: 100%;\n}\n\n.carousel-holder {\n    margin-bottom: 30px;\n}\n\n.carousel-control,\n.item {\n    border-radius: 4px;\n}\n\n.caption {\n    height: 130px;\n    overflow: hidden;\n}\n\n.caption h4 {\n    white-space: nowrap;\n}\n\n.thumbnail img {\n    width: 100%;\n}\n\n.ratings {\n    padding-right: 10px;\n    padding-left: 10px;\n    color: #d17581;\n}\n\n.thumbnail {\n    padding: 0;\n}\n\n.thumbnail .caption-full {\n    padding: 9px;\n    color: #333;\n}\n\nfooter {\n    margin: 50px 0;\n}", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = (__webpack_require__(2))(21);
