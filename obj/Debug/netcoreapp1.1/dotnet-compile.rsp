@@ -1,5 +1,5 @@
---temp-output:C:\Users\renatoms\Documents\GitHub\mam\MaM\obj\Debug\netcoreapp1.1\
---out:C:\Users\renatoms\Documents\GitHub\mam\MaM\bin\Debug\netcoreapp1.1\MaM.dll
+--temp-output:C:\Users\renatoms\GitHub\oficial\obj\Debug\netcoreapp1.1\
+--out:C:\Users\renatoms\GitHub\oficial\bin\Debug\netcoreapp1.1\oficial.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_1
@@ -8,7 +8,7 @@
 --suppress-warning:CS1705
 --optimize:False
 --emit-entry-point:True
---output-name:MaM
+--output-name:oficial
 --file-version:1.0.0.0
 --version:1.0.0.0
 --informational-version:1.0.0
@@ -194,8 +194,8 @@
 --reference:C:\Users\renatoms\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\renatoms\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\renatoms\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\renatoms\Documents\GitHub\mam\MaM\obj\Debug\netcoreapp1.1\MaMdotnet-compile.deps.json",MaM.deps.json
-C:\Users\renatoms\Documents\GitHub\mam\MaM\Program.cs
-C:\Users\renatoms\Documents\GitHub\mam\MaM\Startup.cs
-C:\Users\renatoms\Documents\GitHub\mam\MaM\Controllers\HomeController.cs
-C:\Users\renatoms\Documents\GitHub\mam\MaM\Controllers\SampleDataController.cs
+--resource:"C:\Users\renatoms\GitHub\oficial\obj\Debug\netcoreapp1.1\oficialdotnet-compile.deps.json",oficial.deps.json
+C:\Users\renatoms\GitHub\oficial\Program.cs
+C:\Users\renatoms\GitHub\oficial\Startup.cs
+C:\Users\renatoms\GitHub\oficial\Controllers\HomeController.cs
+C:\Users\renatoms\GitHub\oficial\Controllers\SampleDataController.cs

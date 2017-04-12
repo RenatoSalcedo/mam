@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "59f8c6c48904bf4f1108"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2b0e81d83c6fa977b149"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -2232,7 +2232,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body, html {\r\n    height: 100% !important;\r\n}\r\n\r\nbody, h1, h2, h3, h4, h5 {\r\n    font-family: \"Raleway\", sans-serif;\r\n    font-weight: 400;\r\n    margin: 10px 0;\r\n}\r\n\r\nh3 {\r\n    margin: 20px 0 !important;\r\n}\r\n\r\n.bgimg {\r\n    background-image: url(" + __webpack_require__(30) + ");\r\n    min-height: 100%;\r\n    min-width: 100%;\r\n    background-position: center;\r\n    background-size: cover;\r\n}\r\n\r\n.container-fluid {\r\n    margin-top: 50px !important;\r\n    height: 100% !important;\r\n}\r\n\r\n#rightList {\r\n    float: right;\r\n}\r\n\r\n.sm-image {\r\n    width: 50px;\r\n    height: 50px;\r\n}", ""]);
+	exports.push([module.id, "body, html {\r\n    height: 100% !important;\r\n}\r\n\r\nbody, h1, h2, h3, h4, h5 {\r\n    font-family: \"Raleway\", sans-serif;\r\n    font-weight: 400;\r\n    margin: 10px 0;\r\n}\r\n\r\nh3, h4{\r\n    margin: 20px 0 !important;\r\n}\r\n\r\n.bgimg {\r\n    background-image: url(" + __webpack_require__(30) + ");\r\n    min-height: 100%;\r\n    min-width: 100%;\r\n    background-position: center;\r\n    background-size: cover;\r\n}\r\n\r\n.container-fluid {\r\n    margin-top: 50px !important;\r\n    height: 100% !important;\r\n}\r\n\r\n#rightList {\r\n    float: right;\r\n}\r\n\r\n.sm-image {\r\n    width: 50px;\r\n    height: 50px;\r\n}\r\n\r\np {\r\n  margin: 10px 0 !important;\r\n}", ""]);
 	
 	// exports
 
