@@ -53,13 +53,19 @@
   /* 5. Footer wrapper */
 }
 
+body, html {
+    max-height: 1400px !important;
+    height: 100% !important;
+}
+
 #cartOptions {
   float: right;
   width: 33% !important;
+  margin-top: 2% !important;
 }
 
 #cartRow {
-  margin-top: 20px;
+  margin-top: 60px;
   width: 100%;
 }
 

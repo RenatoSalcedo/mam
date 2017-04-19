@@ -38,8 +38,28 @@ p {
   margin: 10px 0 !important;
 }
 
-#galleryRow, #cartRow {
-    margin-top: 50px !important;
+#galleryRow {
+    margin-top: 60px !important;
+    width: 96%;
+    margin-left: 2%;
+}
+
+#cartRow {
+    margin-top: 60px !important;
+}
+
+.body-content {
+    padding-top: 8px !important;
+}
+
+@media (max-width: 767px){
+    #galleryRow {
+        width: 96%;
+        margin-left: 2%;
+    }
+    .body-content {
+        padding-top: 3px !important;
+    }
 }
 
 #galleryHr {
