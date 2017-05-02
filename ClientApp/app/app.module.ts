@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { CartComponent } from './components/cart/cart.component';
 import { AboutComponent } from './components/about/about.component';
+import { LoginComponent } from './admin/login/login.component';
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -16,7 +17,8 @@ import { AboutComponent } from './components/about/about.component';
         HomeComponent,
         GalleryComponent,
         CartComponent,
-        AboutComponent
+        AboutComponent,
+        LoginComponent
     ],
     imports: [
         UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
@@ -26,6 +28,7 @@ import { AboutComponent } from './components/about/about.component';
             { path: 'gallery', component: GalleryComponent },
             { path: 'cart', component: CartComponent },
             { path: 'about', component: AboutComponent},
+            { path: 'admin/login', component: LoginComponent},
             { path: '**', redirectTo: 'home' }
         ])
     ]
