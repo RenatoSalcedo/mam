@@ -1,8 +1,3 @@
-$(document).ready(function() {
-    $('html').css('overflow','hidden');
-    $('#masterPage').css('overflow','hidden');
-});
-
 $('.login-form').hide();
 $('.loginform-open a').click(function(e){
   e.preventDefault();
