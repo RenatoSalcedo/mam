@@ -7,6 +7,9 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
+.margin-top50 {
+  margin-top: 50px !important;
+}
 input, textarea {
   border: rgba(0, 0, 0, 0.7) solid 1px !important;
   border-radius: 10px !important;

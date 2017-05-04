@@ -45,7 +45,6 @@ body{
   font-weight: bold;
   font-size: 1.125em;
   position: relative;
-  margin-bottom: 12%;
 }
 
 .form-close{
@@ -61,6 +60,7 @@ label,
 button{
   display: block;
   width: 100%;
+  margin-top: 10px;
 }
 
 input{

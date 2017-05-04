@@ -21,8 +21,11 @@ h3 {
 }
 
 .container-fluid {
-    margin-top: 50px !important;
     height: 100% !important;
+}
+
+.marginTop50 {
+    margin-top: 50px !important;
 }
 
 #rightList {
@@ -39,13 +42,9 @@ p {
 }
 
 #galleryRow {
-    margin-top: 60px !important;
+    margin-top: 100px !important;
     width: 96%;
     margin-left: 2%;
-}
-
-#cartRow {
-    margin-top: 60px !important;
 }
 
 .body-content {
